@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akshanth Ajay AS | Cybersecurity Student</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  background: "hsl(var(--background))",
+  foreground: "hsl(var(--foreground))",
+  border: "hsl(var(--border))",
+  "muted-foreground": "hsl(var(--muted-foreground))"
+} } } };
+</script>
+<style>
+:root{--font-display:'Instrument Serif',serif;--font-body:'Inter',sans-serif;--background:201 100% 13%;--foreground:0 0% 100%;--muted-foreground:240 4% 66%;--border:0 0% 18%}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font-body);background:hsl(var(--background));color:hsl(var(--foreground))}
+.d{font-family:'Instrument Serif',serif}
+.liquid-glass{background:rgba(255,255,255,0.01);background-blend-mode:luminosity;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:none;box-shadow:inset 0 1px 1px rgba(255,255,255,0.1);position:relative;overflow:hidden}
+.liquid-glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.45) 0%,rgba(255,255,255,0.15) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.15) 80%,rgba(255,255,255,0.45) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude;pointer-events:none}
+@keyframes fade-rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.animate-fade-rise{animation:fade-rise .8s ease-out both}
+.animate-fade-rise-delay{animation:fade-rise .8s ease-out .2s both}
+.animate-fade-rise-delay-2{animation:fade-rise .8s ease-out .4s both}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.animate-fade-rise,.animate-fade-rise-delay,.animate-fade-rise-delay-2{animation:none}}
+a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.tag{border:1px solid hsl(var(--border));border-radius:9999px;padding:.25rem .75rem;font-size:.875rem;color:hsl(var(--muted-foreground))}
+</style>
+</head>
+<body>
+<div id="top">
+
+<header class="relative min-h-screen w-full overflow-hidden">
+  <video class="absolute inset-0 z-0 h-full w-full object-cover" autoplay loop muted playsinline aria-hidden="true"
+    src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31.mp4"></video>
+  <div class="relative z-10 flex min-h-screen flex-col">
+    <nav class="relative z-10 mx-auto flex w-full max-w-7xl flex-row items-center justify-between px-8 py-6" aria-label="Primary">
+      <a href="#top" class="d text-3xl tracking-tight text-foreground">Akshanth</a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#top" aria-current="page" class="text-sm text-foreground">Home</a>
+        <a href="#projects" class="text-sm text-muted-foreground transition-colors hover:text-foreground">Projects</a>
+        <a href="#about" class="text-sm text-muted-foreground transition-colors hover:text-foreground">About</a>
+        <a href="#certifications" class="text-sm text-muted-foreground transition-colors hover:text-foreground">Certifications</a>
+        <a href="#contact" class="text-sm text-muted-foreground transition-colors hover:text-foreground">Contact</a>
+      </div>
+      <a href="#contact" class="liquid-glass rounded-full px-6 py-2.5 text-sm text-foreground transition-transform hover:scale-[1.03]">Get in touch</a>
+    </nav>
+
+    <div class="relative z-10 flex flex-1 flex-col items-center justify-center px-6 pt-32 pb-40 py-[90px] text-center">
+      <h1 class="d animate-fade-rise max-w-7xl text-5xl font-normal leading-[0.95] tracking-[-2.46px] sm:text-7xl md:text-8xl">
+        Learning how systems <em class="not-italic text-muted-foreground">break</em>, to help <em class="not-italic text-muted-foreground">secure them.</em>
+      </h1>
+      <p class="animate-fade-rise-delay mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+        I'm Akshanth Ajay AS, a cybersecurity student focused on red teaming and network security. BSc Computer Science, UIT, Kuravankonam (2023 to 2026).
+      </p>
+      <a href="#projects" class="animate-fade-rise-delay-2 liquid-glass mt-12 cursor-pointer rounded-full px-14 py-5 text-base text-foreground transition-transform hover:scale-[1.03]">View projects</a>
+    </div>
+  </div>
+</header>
+
+<main class="mx-auto max-w-5xl px-6">
+
+  <section id="projects" class="scroll-mt-8 py-24">
+    <h2 class="d mb-10 text-4xl font-normal leading-none tracking-tight sm:text-5xl">Projects</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      <article class="liquid-glass rounded-3xl p-8">
+        <p class="mb-2 text-sm text-muted-foreground">In progress</p>
+        <h3 class="d text-3xl font-normal tracking-tight">Malware sandbox analyzer</h3>
+        <p class="mt-4 leading-relaxed text-muted-foreground">A lab for safely analyzing suspicious files, built on a REMnux virtual machine running in QEMU/KVM.</p>
+        <ul class="mt-6 flex flex-wrap gap-2"><li class="tag">REMnux</li><li class="tag">QEMU/KVM</li></ul>
+      </article>
+      <article class="liquid-glass rounded-3xl p-8">
+        <p class="mb-2 text-sm text-muted-foreground">In progress</p>
+        <h3 class="d text-3xl font-normal tracking-tight">VulnScope</h3>
+        <p class="mt-4 leading-relaxed text-muted-foreground">A software vulnerability discovery and analysis tool. It scans software versions for known CVE vulnerabilities and gives security details and remediation guidance.</p>
+        <ul class="mt-6 flex flex-wrap gap-2"><li class="tag">Python</li><li class="tag">REST APIs</li><li class="tag">JSON</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="scroll-mt-8 border-t border-border py-24">
+    <h2 class="d mb-10 text-4xl font-normal leading-none tracking-tight sm:text-5xl">About</h2>
+    <p class="max-w-2xl text-lg leading-relaxed text-muted-foreground">I'm a cybersecurity student who wants to understand how systems break so I can help secure them. My interests are red teaming and networking, and I'm building hands-on tools to learn both.</p>
+    <p class="mt-4 text-muted-foreground">BSc Computer Science, UIT, Kuravankonam (2023 to 2026).</p>
+    <ul class="mt-6 flex flex-wrap gap-2" aria-label="Focus areas"><li class="tag">Red team</li><li class="tag">Networking</li></ul>
+  </section>
+
+  <section id="certifications" class="scroll-mt-8 border-t border-border py-24">
+    <h2 class="d mb-10 text-4xl font-normal leading-none tracking-tight sm:text-5xl">Certifications</h2>
+    <article class="liquid-glass max-w-xl rounded-3xl p-8">
+      <p class="mb-2 text-sm text-muted-foreground">HackerRank skill certification</p>
+      <h3 class="d text-3xl font-normal tracking-tight">Python (Basic)</h3>
+      <p class="mt-4 leading-relaxed text-muted-foreground">Passed the HackerRank Python (Basic) skill certification test. Earned 16 September 2026.</p>
+    </article>
+  </section>
+
+  <section id="contact" class="scroll-mt-8 border-t border-border py-24">
+    <h2 class="d mb-10 text-4xl font-normal leading-none tracking-tight sm:text-5xl">Contact</h2>
+    <ul class="space-y-3 text-lg">
+      <li class="text-muted-foreground">Email: <a class="text-foreground underline underline-offset-4 hover:opacity-80" href="mailto:2004akshanth@gmail.com">2004akshanth@gmail.com</a></li>
+      <li class="text-muted-foreground">LinkedIn: <a class="text-foreground underline underline-offset-4 hover:opacity-80" href="https://www.linkedin.com/in/akshanth-ajay-as-40902228b" rel="noopener">linkedin.com/in/akshanth-ajay-as-40902228b</a></li>
+      <li class="text-muted-foreground">GitHub: <a class="text-foreground underline underline-offset-4 hover:opacity-80" href="https://github.com/Anakin-404" rel="noopener">github.com/Anakin-404</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="border-t border-border px-6 py-8 text-center text-sm text-muted-foreground">Akshanth Ajay AS, Cybersecurity Student</footer>
+</div>
+</body>
+</html>
